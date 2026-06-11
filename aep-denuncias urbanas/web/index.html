@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cidade Sustentável</h1>
+        <p>Sistema de Denúncias Urbanas</p>
+    </header>
+
+    <main>
+
+        <section class="cadastro">
+
+            <h2>Registrar Denúncia</h2>
+
+            <form id="formDenuncia">
+
+                <div class="campo">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" rows="4" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" required>
+                </div>
+
+                <div class="campo">
+                    <label for="urgencia">Urgência</label>
+
+                    <select id="urgencia">
+                        <option value="Baixa">Baixa</option>
+                        <option value="Média">Média</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    Registrar Denúncia
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="lista">
+
+            <h2>Denúncias Registradas</h2>
+
+            <div id="listaDenuncias">
+
+                <p>Nenhuma denúncia cadastrada.</p>
+
+            </div>
+
+        </section>
+
+        <section class="historico">
+
+            <h2>Histórico de Ações</h2>
+
+            <div id="listaHistorico">
+
+                <p>Nenhuma ação registrada.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto AEP - Engenharia de Software</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
